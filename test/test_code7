@@ -1,0 +1,4 @@
+program p
+begin
+	x := 2 * 3 + 4 * 5 
+end

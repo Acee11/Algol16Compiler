@@ -1,0 +1,22 @@
+program p
+local i
+procedure fib ( n )
+local a, b, c
+begin
+	a := 1;
+	b := 1;
+	while n <> 0 do
+		c := a + b;
+		a := b;
+		b := c;
+		n := n - 1
+	done;
+	return a
+end
+begin
+	i := 0;
+	while i < 10 do
+		write(fib(i));
+		i := i + 1
+	done
+end

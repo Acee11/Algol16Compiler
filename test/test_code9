@@ -1,0 +1,25 @@
+program p
+procedure f ( )	
+	procedure one()
+		procedure two()
+		begin
+			write 2;
+			return 2
+		end
+
+	begin
+		write 1;
+		return 1 + two()
+	end
+begin
+	write 1337;
+	return one()
+end
+procedure ack(m, n)
+begin
+	return f()
+end
+
+begin
+	write ack(1,2)
+end

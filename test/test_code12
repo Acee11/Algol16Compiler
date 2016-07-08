@@ -1,0 +1,17 @@
+program p
+procedure factorial(n)
+begin
+	if n <= 0 then
+		return 1
+	else
+		return n * factorial(n-1)
+	fi
+end
+local x
+begin
+	read x;
+	while x <> 0 do
+		write factorial(x);
+		read x
+	done
+end
