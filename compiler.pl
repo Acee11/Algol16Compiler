@@ -1,6 +1,5 @@
 
 %	Autor: Wojciech Balik
-%	Nr Indeksu: 280254
 %
 %	(Parser i Lekser sa dosc mocno wzorowane na programie while_parser umieszczonym na kno)
 %
@@ -13,7 +12,7 @@
 %	Struktura pamieci programu:
 %
 %  											 
-%	 _______________________________________________________
+%    _______________________________________________________
 %   |                                                   |   |
 %   |    .text 	                            Stos  <---  |   |
 %   |___________________________________________________|___|
