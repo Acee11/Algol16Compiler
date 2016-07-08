@@ -1,0 +1,18 @@
+program p
+	local a, b
+	procedure gcd(x , y)
+	local z
+	begin
+		while y <> 0 do
+			z := x mod y;
+			x := y;
+			y := z
+		done;
+		write x;
+		return x
+	end
+begin
+	read a;
+	read b;
+	write gcd(a,b)
+end

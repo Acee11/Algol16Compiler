@@ -1,0 +1,14 @@
+program p
+	
+	procedure f ( x )
+		procedure one ( )
+		begin
+			write 5;
+			return 1
+		end
+	begin
+		x := 1
+	end
+begin
+	call f ( 5 )
+end

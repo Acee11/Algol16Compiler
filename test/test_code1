@@ -1,0 +1,11 @@
+program Suma
+local s , x
+begin
+	s := 0;
+	read x;
+	while x <> 0 do
+		s := s + x;
+		read x
+	done;
+	write s
+end

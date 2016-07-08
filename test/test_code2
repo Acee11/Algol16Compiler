@@ -1,0 +1,16 @@
+program p
+	procedure f ( x )
+		procedure one ( )
+		begin
+			write 5;
+			return 1
+		end
+	begin
+		while x > 0
+		do
+			x := x - one()
+		done
+	end
+begin
+	call f ( 5 )
+end
