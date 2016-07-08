@@ -17,17 +17,17 @@
 %   |    .text 	                            Stos  <---  |   |
 %   |___________________________________________________|___|
 %	^													  ^
-%  	|												      |
-%  0x0000										        0xfffe - Stack Pointer
+%  	|                                                     |
+%  0x0000                                              0xfffe - Stack Pointer
 %
 %	Struktura ramki stosu:
 %	 ____________________________________________________________
-%	|local|     |local| arg |     | arg | adres ramki | adres   |
-%	|  n  | ... |  1  |  1  | ... |  n	|   rodzica   | powrotu |
-%	|_____|_____|_____|_____|_____|_____|_____________|_________|
-%	^											  
-%	|											  
-%  %stack pointer								
+%   |local|     |local| arg |     | arg | adres ramki | adres   |
+%   |  n  | ... |  1  |  1  | ... |  n	|   rodzica   | powrotu |
+%   |_____|_____|_____|_____|_____|_____|_____________|_________|
+%   ^											  
+%   |											  
+%  stack pointer								
 %
 %	Konwencja wywolania procedury:
 %	Strona wywolujaca wrzuca na stos adres powrotu, adres ramki rodzica(*1)
